@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thriller Recommendations</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #000000;
+      font-family: 'Georgia', serif;
+      color: #c2bfbf;
+      margin: 0;
+      padding: 0;
+    }
+
+    .centered-wrapper {
+      width: 980px;
+      max-width: 100%;
+      margin: 2rem auto 0;
+      box-sizing: border-box;
+    }
+
+    .spotify-container {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .spotify-container iframe {
+  width: 100%;
+  height: 200px; /* Increased from 152px to 200px */
+  border: none;
+  border-radius: 0;
+  display: block;
+}
+
+
+    .quote-text {
+      text-align: center;
+      font-style: italic;
+      color: #581313;
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin: 1.5rem auto;
+      line-height: 1.6;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin: 1.5rem 0 1rem;
+      font-weight: 500;
+    }
+
+    .book-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .book-tile {
+      flex: 0 0 180px;
+      text-align: center;
+    }
+
+    .book-tile img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      height: 270px;
+      object-fit: cover;
+    }
+
+    .book-tile h3 {
+      margin-top: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .book-tile p {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered-wrapper">
+    <div class="spotify-container">
+      <iframe 
+        src="https://open.spotify.com/embed/track/2LXjhNee4iPRVemx9NSZQ3?utm_source=generator" 
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- 💬 Quote Added Here -->
+    <p class="quote-text">
+      “Love is the world's infinite mutability; lies, hatred, murder even are all knit up in it.
+      It is the inevitable blossoming of opposites, a magnificent rose smelling faintly of blood.”
+    </p>
+
+    <h2 class="section-title">Books That Match the Vibe</h2>
+
+    <div class="book-row">
+      <div class="book-tile">
+        <img src="images/gone-girl.jpg" alt="Gone Girl" />
+        <h3>Gone Girl</h3>
+        <p>Gillian Flynn</p>
+      </div>
+      <div class="book-tile">
+        <img src="images/peril-end-house.jpg" alt="The Peril at End House" />
+        <h3>The Peril at End House</h3>
+        <p>Agatha Christie</p>
+      </div>
+      
+      <div class="book-tile">
+        <img src="images/rebecca.jpg" alt="Rebecca" />
+        <h3>Rebecca</h3>
+        <p>Daphne du Maurier</p>
+      </div>
+      <div class="book-tile">
+        <img src="images/silent-patient.jpg" alt="Blood Orange" />
+        <h3>Blood Orange</h3>
+        <p>Harriet Tyce</p>
+      </div>
+      <div class="book-tile">
+        <img src="images/kind-worth-killing.jpg" alt="The Kind Worth Killing" />
+        <h3>The Kind Worth Killing</h3>
+        <p>Peter Swanson</p>
+      </div>
+     
+     
+    </div>
+  </div>
+  <div class="centered-wrapper" style="margin-top: 4rem;">
+  <div class="spotify-container">
+    <iframe 
+  src="https://open.spotify.com/embed/track/5sS2fpqUfS9fKUzbfm1A7G?utm_source=generator" 
+  width="100%" 
+  height="180" 
+  frameborder="0" 
+  allowtransparency="true" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+
+  </div>
+
+  <p class="quote-text" style="text-align: center; font-style: italic; color: #650606; margin-top: 1rem;">
+    “A good book is an event in my life.” – Stendhal
+  </p>
+
+  <h2 class="section-title">Literary Fiction That Lingers</h2>
+
+  <div class="book-row">
+    <div class="book-tile">
+      <img src="images/good-material.jpg" alt="Good Material" />
+      <h3>Good Material</h3>
+      <p>Dolly Alderton</p>
+    </div>
+    <div class="book-tile">
+      <img src="images/blue-sisters.jpg" alt="The Blue Sisters" />
+      <h3>The Blue Sisters</h3>
+      <p>Coco Mellors</p>
+    </div>
+    <div class="book-tile">
+      <img src="images/ghosts.jpg" alt="Ghosts" />
+      <h3>Ghosts</h3>
+      <p>Dolly Alderton</p>
+    </div>
+    <div class="book-tile">
+      <img src="images/the-bell-jar.jpg" alt="The Bell Jar" />
+      <h3>The Bell Jar</h3>
+      <p>Sylvia Plath</p>
+    </div>
+    <div class="book-tile">
+      <img src="images/normal-people.jpg" alt="Normal People" />
+      <h3>Normal People</h3>
+      <p>Sally Rooney</p>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    <a class="home-link" href="reviews.html">← Back to Reviews</a>
+    <br /><br />
+    <a href="index.html" style="display: block; text-align: center; margin: 2rem 0; font-size: 1rem; color: rgb(248, 238, 238); text-decoration: none;">
+       Home
+    </a>
+    
+  </footer>
+  <footer style="text-align: center; padding: 1rem; font-size: 0.85rem; color: #888;">
+    © 2025 Ujani De.
+  </footer>
+  
+
+</body>
+</html>
