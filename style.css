@@ -53,26 +53,25 @@ body {
   }
   
   /* INTRO SECTION */
+/* Make tiles smaller */
+.tile {
+    width: 220px;  /* smaller width */
+    height: 200px; /* smaller height */
+    font-size: 1.3rem; /* scale down font size to fit */
+  }
+  
+  /* Reduce padding between intro and tiles */
   .intro-section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1rem 2rem; /* Reduced padding */
+    padding: 2rem 4rem; /* less padding to bring it closer to tiles */
   }
   
-  .intro {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #ddd;
-    text-align: left;
-    margin-top: 0; /* Prevent spacing above intro */
-  }
-  
-  /* TILE SECTION */
   .tiles {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem; /* Reduced vertical padding */
+    gap: 1.5rem;   /* slightly smaller gap between tiles */
+    padding: 2rem 2rem 4rem; /* reduce vertical padding to shift tiles up */
     flex-wrap: wrap;
   }
   
@@ -291,6 +290,33 @@ body {
     border: none;
     display: block;
   }
+  /* Container for overlapping */
+.overlap-heading {
+    position: relative;
+    display: inline-block;
+    font-family: 'Instrument Serif', serif; /* keep your font */
+    line-height: 1;
+    color: #c15429; /* your brand color */
+  }
+  
+  /* Main "TheShelf" */
+  .overlap-heading .main-text {
+    font-weight: bold;
+    font-size: inherit; /* keep current size */
+  }
+  
+  /* Overlapping "Aware" */
+  .overlap-heading .overlap-text {
+    position: absolute;
+    top: 60%; /* adjust overlap */
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5em; /* smaller than main */
+    color: #c15429;
+    pointer-events: none;
+  }
+  
+  
      
   
   
